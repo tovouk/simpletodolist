@@ -1,0 +1,25 @@
+<% include partials/header %>
+<div id="container">
+    <div id="top">
+        <p id="title">To do List - Made with Express and Node</p>
+    </div>
+    <div id="listcontainer" class="h-50" >
+        <% var counter = 1 %>
+        <ul id="list" style="min-height:50vh;max-height:70vh;overflow:auto;">
+        <% tasks.forEach(function(task){ %>
+            
+            <li><%= counter %>. <%= task.task %> <span class="delete">
+      <a href="/destroy/<%= task._id %>" title="Delete this todo item" class="align-middle">delete</a>
+    </span></li>
+            <% counter++ %>
+        <% }); %>
+        </ul>
+    </div>
+    <div style="margin:auto;text-align:center;">
+    <form action="/list" method="POST" class="btn-group-vertical text-center">
+        <input type="text" name="task" placeholder="Task Name" class="form-control">
+        <button class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+</div>
+<% include partials/footer %>

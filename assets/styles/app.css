@@ -1,0 +1,101 @@
+body{
+    background-color:aqua;
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#top{
+    height:auto;
+    background-color: black;
+    color:white;
+    text-align: center;
+    width:50%;
+    margin:auto;
+}
+#top p{
+    padding:0;
+    margin:auto;
+    width:50%;
+    text-align: center;
+}
+#listcontainer{
+    text-align: center;
+    height:auto;
+    width:50%;
+    margin:auto;
+    padding:0;
+    background-color:cyan;
+    font-size:2em;
+}
+#list-container ul{
+    text-align:center;
+    margin:auto;
+}
+#list{
+    color:purple;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+li{
+    text-align: center;
+    word-wrap: break-word;
+}
+li:nth-child(even){
+    background-color: white;
+}
+li:nth-child(odd){
+    background-color: cyan;
+}
+form{
+    text-align:center;
+    border-top:1px solid black;
+    background-color: black;
+    width:50%;
+    margin:auto !important;
+}
+input, button{
+    text-align:center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color:cyan;
+}
+.container{
+    border: 1px solid black !important;
+}
+#header{
+    text-align: center;
+}
+.form-control{
+    margin:auto;
+    text-align: center;
+    
+}
+navbar, navbar-nav{
+    margin:auto !important;
+    text-align: center;
+}
+#navdiv{
+    margin:auto;
+}
+#footsect{
+    margin:auto;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+.delete a{
+    color:black;
+    text-decoration: none;
+    font-size:.4em;
+    border: 1px solid black;
+    
+}
+.delete a:nth-child(even){
+    background-color: cyan;
+}.delete a:nth-child(odd){
+    background-color: white;
+}
+.delete a:hover{
+    background-color: black;
+    color:white;
+}
